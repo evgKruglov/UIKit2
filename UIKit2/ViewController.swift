@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = .magenta
+        self.view.backgroundColor = .brown
         
         self.button1.frame = CGRect(x: 120, y: 250, width: 150, height: 30)
         self.button1.backgroundColor = .orange
