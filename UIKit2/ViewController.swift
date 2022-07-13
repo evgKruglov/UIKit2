@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     let button = UIButton()
     let button1 = UIButton()
     let picker = UIDatePicker()
+    let showSecondViewController = UIButton()
     
     
     override func viewDidLoad() {
@@ -49,7 +50,18 @@ class ViewController: UIViewController {
         self.view.addSubview(mySwitch2)
         self.mySwitch2.addTarget(self, action: #selector(isOn(target:)), for: .valueChanged)
         
+        self.showSecondViewController.frame = CGRect(x: 120, y: 700, width: 150, height: 30)
+        self.showSecondViewController.backgroundColor = .blue
+        self.showSecondViewController.setTitle("next", for: .normal)
+        self.view.addSubview(showSecondViewController)
+        self.showSecondViewController.addTarget(self, action: #selector(show(tap:)), for: .allTouchEvents)
         
+    }
+    
+    @objc func show(tap: UIButton) {
+        if showSecondViewController.isTouchInside == true {
+            present(SecondViewController, animated: true, completion: nil)
+        }
     }
     
     @objc func isOn(target: UISwitch) {

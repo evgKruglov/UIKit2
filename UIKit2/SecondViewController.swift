@@ -11,7 +11,8 @@ class SecondViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("this is main")
+        print("yes")
+
         // Do any additional setup after loading the view.
     }
     
