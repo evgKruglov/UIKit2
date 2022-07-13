@@ -12,13 +12,21 @@ class ViewController: UIViewController {
     let mySwitch2 = UISwitch()
     let button = UIButton()
     let button1 = UIButton()
+    let picker = UIDatePicker()
     
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         self.view.backgroundColor = .brown
+        
+        //create picker
+        self.picker.frame = CGRect(x: 20, y: 300, width: 350, height: 40)
+        picker.datePickerMode = .dateAndTime
+        self.view.addSubview(picker)
+        
+        picker.addTarget(self, action: #selector(dataPickerChange(paramData:)), for: .valueChanged)
+        
         
         self.button1.frame = CGRect(x: 120, y: 250, width: 150, height: 30)
         self.button1.backgroundColor = .orange
@@ -32,7 +40,7 @@ class ViewController: UIViewController {
         self.button.setTitle("ok", for: .normal)
         self.button.setTitle("button press", for: .highlighted)
         self.view.addSubview(button)
-
+        
         self.mySwitch2.frame = CGRect.zero
         self.mySwitch2.center = self.view.center
         self.mySwitch2.tintColor = .red
@@ -53,5 +61,27 @@ class ViewController: UIViewController {
             print("button on")
         }
     }
+    @objc func dataPickerChange(paramData: UIDatePicker) {
+        if paramData.isEqual(self.picker) {
+            print("date is \(paramData.date)")
+        }
+    }
 }
 
+//extension ViewController: UIPickerViewDataSource {
+//    // how many components view
+//    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+//        return 1
+//    }
+//    // how many string
+//    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+//        return 10
+//    }
+//
+//}
+//extension ViewController: UIPickerViewDelegate {
+//    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+//        let result = "raw = \(row)"
+//        return result
+//    }
+//}
