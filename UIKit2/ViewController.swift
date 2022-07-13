@@ -44,8 +44,10 @@ class ViewController: UIViewController {
     @objc func isOn(target: UISwitch) {
         if target.isOn {
             self.button.isUserInteractionEnabled = false
+            print("off")
         } else {
             self.button.isUserInteractionEnabled = true
+            print("on")
         }
     }
 }
