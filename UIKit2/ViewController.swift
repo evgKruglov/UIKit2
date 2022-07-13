@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = .brown
+        
         self.button1.frame = CGRect(x: 120, y: 250, width: 150, height: 30)
         self.button1.backgroundColor = .orange
         self.button1.setTitle("ok", for: .normal)
@@ -45,10 +47,10 @@ class ViewController: UIViewController {
     @objc func isOn(target: UISwitch) {
         if target.isOn {
             self.button.isUserInteractionEnabled = false
-            print("off")
+            print("buktton off")
         } else {
             self.button.isUserInteractionEnabled = true
-            print("on")
+            print("button on")
         }
     }
 }
