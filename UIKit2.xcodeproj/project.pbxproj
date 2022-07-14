@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A194FBF288049F800A5BF77 /* ThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A194FBE288049F800A5BF77 /* ThreeViewController.swift */; };
+		7A194FC328804C4C00A5BF77 /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A194FC028804C4C00A5BF77 /* 1.jpeg */; };
+		7A194FC428804C4C00A5BF77 /* 3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A194FC128804C4C00A5BF77 /* 3.jpeg */; };
+		7A194FC528804C4C00A5BF77 /* 2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 7A194FC228804C4C00A5BF77 /* 2.jpeg */; };
 		7A6D2FCC287ECB3300D0F155 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D2FCB287ECB3300D0F155 /* AppDelegate.swift */; };
 		7A6D2FCE287ECB3400D0F155 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D2FCD287ECB3400D0F155 /* SceneDelegate.swift */; };
 		7A6D2FD0287ECB3400D0F155 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A6D2FCF287ECB3400D0F155 /* ViewController.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A194FBE288049F800A5BF77 /* ThreeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeViewController.swift; sourceTree = "<group>"; };
+		7A194FC028804C4C00A5BF77 /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpeg; sourceTree = "<group>"; };
+		7A194FC128804C4C00A5BF77 /* 3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpeg; sourceTree = "<group>"; };
+		7A194FC228804C4C00A5BF77 /* 2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpeg; sourceTree = "<group>"; };
 		7A6D2FC8287ECB3300D0F155 /* UIKit2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKit2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6D2FCB287ECB3300D0F155 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7A6D2FCD287ECB3400D0F155 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,9 +49,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A194FC628804C6400A5BF77 /* Image for SegmentControl */ = {
+			isa = PBXGroup;
+			children = (
+				7A194FC028804C4C00A5BF77 /* 1.jpeg */,
+				7A194FC228804C4C00A5BF77 /* 2.jpeg */,
+				7A194FC128804C4C00A5BF77 /* 3.jpeg */,
+			);
+			path = "Image for SegmentControl";
+			sourceTree = "<group>";
+		};
 		7A6D2FBF287ECB3300D0F155 = {
 			isa = PBXGroup;
 			children = (
+				7A194FBE288049F800A5BF77 /* ThreeViewController.swift */,
 				7A6D2FDF287EE2CB00D0F155 /* SecondViewController.swift */,
 				7A6D2FCA287ECB3300D0F155 /* UIKit2 */,
 				7A6D2FC9287ECB3300D0F155 /* Products */,
@@ -69,6 +88,7 @@
 				7A6D2FD6287ECB3500D0F155 /* LaunchScreen.storyboard */,
 				7A6D2FD9287ECB3500D0F155 /* Info.plist */,
 				7A6D2FE3287F1A5700D0F155 /* gayazov.mp3 */,
+				7A194FC628804C6400A5BF77 /* Image for SegmentControl */,
 			);
 			path = UIKit2;
 			sourceTree = "<group>";
@@ -131,9 +151,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A194FC528804C4C00A5BF77 /* 2.jpeg in Resources */,
 				7A6D2FE4287F1A5700D0F155 /* gayazov.mp3 in Resources */,
 				7A6D2FD8287ECB3500D0F155 /* LaunchScreen.storyboard in Resources */,
+				7A194FC328804C4C00A5BF77 /* 1.jpeg in Resources */,
 				7A6D2FD5287ECB3500D0F155 /* Assets.xcassets in Resources */,
+				7A194FC428804C4C00A5BF77 /* 3.jpeg in Resources */,
 				7A6D2FD3287ECB3400D0F155 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -149,6 +172,7 @@
 				7A6D2FD0287ECB3400D0F155 /* ViewController.swift in Sources */,
 				7A6D2FCC287ECB3300D0F155 /* AppDelegate.swift in Sources */,
 				7A6D2FCE287ECB3400D0F155 /* SceneDelegate.swift in Sources */,
+				7A194FBF288049F800A5BF77 /* ThreeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

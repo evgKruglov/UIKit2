@@ -8,22 +8,37 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+    var segmentConrol = UISegmentedControl()
+    var imageView = UIImageView()
+    var menuArray = ["one", "two", "three"]
+    let imageArrays = [
+        UIImage(named: "1.jpeg"),
+        UIImage(named: "2.jpeg"),
+        UIImage(named: "3.jpeg")
+    ]
 
     override func viewDidLoad() {
+        // create segment
         super.viewDidLoad()
-        print("this is main")
-        // Do any additional setup after loading the view.
+        self.segmentConrol = UISegmentedControl(items: self.menuArray)
+        self.segmentConrol.frame = CGRect(x: 100, y: 730, width: 200, height: 30)
+        self.view.addSubview(self.segmentConrol)
+        self.segmentConrol.isMomentary = false
+        self.segmentConrol.addTarget(self, action: #selector(selectedValue(target:)), for: .valueChanged)
+        
+        //create image
+        self.imageView.frame = CGRect(x: 0, y: 0, width: 400, height: 400)
+        self.imageView.center = self.view.center
+        self.imageView.image = self.imageArrays[0]
+        self.view.addSubview(imageView)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @objc func selectedValue(target: UISegmentedControl) {
+        if target == self.segmentConrol {
+            let segmentIndex = target.selectedSegmentIndex
+            self.imageView.image = self.imageArrays[segmentIndex]
+        }
     }
-    */
 
 }
