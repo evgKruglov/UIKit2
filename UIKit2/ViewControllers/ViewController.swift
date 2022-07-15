@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     
     
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        self.navigationItem.title = "VievController"
+        
+        
         self.view.backgroundColor = .brown
         //MARK: Пытаемся воспроизвести
         do {

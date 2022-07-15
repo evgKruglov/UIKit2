@@ -19,6 +19,7 @@ class SecondViewController: UIViewController {
     ]
 
     override func viewDidLoad() {
+        self.title = "SecondVievController"
         // create segment
         super.viewDidLoad()
         self.segmentConrol = UISegmentedControl(items: self.menuArray)

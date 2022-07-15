@@ -11,21 +11,31 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     var window: UIWindow?
     
-    var navController = UINavigationController()
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else {return}
-        
-        let viewController = FiveViewController()
-        self.navController = UINavigationController(rootViewController: viewController)
-        self.window = UIWindow(frame: UIScreen.main.bounds)
         let window = UIWindow(windowScene: windowScene)
+        let firstViewController = ViewController()
+        let secondViewController = SecondViewController()
         
-        self.window = window
-
-        window.rootViewController = navController
+        
+        // независимые для каждого экрана
+        let firstNavController = UINavigationController(rootViewController: firstViewController)
+        let secondNavController = UINavigationController(rootViewController: secondViewController)
+        
+        let tabBarController = UITabBarController()
+        tabBarController.setViewControllers([firstNavController,secondNavController], animated: true)
+        
+        window.rootViewController = tabBarController
         window.backgroundColor = UIColor.white
+        
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Подгружаем title и tabBarItem от SecondViewController
+        secondViewController.loadViewIfNeeded()
+        self.window = window
         window.makeKeyAndVisible()
+
     }
 
 

@@ -21,6 +21,7 @@
 		7A6D2FE4287F1A5700D0F155 /* gayazov.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A6D2FE3287F1A5700D0F155 /* gayazov.mp3 */; };
 		7A94581F28814F470058CEFF /* FourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A94581E28814F470058CEFF /* FourViewController.swift */; };
 		7A94582228818AA30058CEFF /* FiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A94582128818AA30058CEFF /* FiveViewController.swift */; };
+		7A945826288195060058CEFF /* SixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A945825288195060058CEFF /* SixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		7A6D2FE3287F1A5700D0F155 /* gayazov.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = gayazov.mp3; sourceTree = "<group>"; };
 		7A94581E28814F470058CEFF /* FourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourViewController.swift; sourceTree = "<group>"; };
 		7A94582128818AA30058CEFF /* FiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiveViewController.swift; sourceTree = "<group>"; };
+		7A945825288195060058CEFF /* SixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				7A194FBE288049F800A5BF77 /* ThreeViewController.swift */,
 				7A94581E28814F470058CEFF /* FourViewController.swift */,
 				7A94582128818AA30058CEFF /* FiveViewController.swift */,
+				7A945825288195060058CEFF /* SixViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				7A6D2FD0287ECB3400D0F155 /* ViewController.swift in Sources */,
 				7A94581F28814F470058CEFF /* FourViewController.swift in Sources */,
 				7A6D2FCC287ECB3300D0F155 /* AppDelegate.swift in Sources */,
+				7A945826288195060058CEFF /* SixViewController.swift in Sources */,
 				7A6D2FCE287ECB3400D0F155 /* SceneDelegate.swift in Sources */,
 				7A194FBF288049F800A5BF77 /* ThreeViewController.swift in Sources */,
 			);
