@@ -27,6 +27,8 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         self.navigationItem.title = "VievController"
+        let tabBarItem = UITabBarItem(tabBarSystemItem: .contacts, tag: 0)
+        self.tabBarItem = tabBarItem
         
         
         self.view.backgroundColor = .brown

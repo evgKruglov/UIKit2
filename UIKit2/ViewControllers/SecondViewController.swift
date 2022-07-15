@@ -19,7 +19,14 @@ class SecondViewController: UIViewController {
     ]
 
     override func viewDidLoad() {
-        self.title = "SecondVievController"
+        
+        
+        self.navigationItem.title = "SecondVievController"
+        let tabBarItem = UITabBarItem(tabBarSystemItem: .downloads, tag: 1)
+        self.tabBarItem = tabBarItem
+
+
+
         // create segment
         super.viewDidLoad()
         self.segmentConrol = UISegmentedControl(items: self.menuArray)
