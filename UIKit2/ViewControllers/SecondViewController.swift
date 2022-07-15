@@ -40,5 +40,5 @@ class SecondViewController: UIViewController {
             self.imageView.image = self.imageArrays[segmentIndex]
         }
     }
-
+        
 }
